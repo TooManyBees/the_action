@@ -1,0 +1,8 @@
+name: "The Action"
+description: "bite me"
+runs:
+  using: composite
+  steps:
+    - name: The Step
+      shell: sh
+      run: env
