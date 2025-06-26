@@ -1,0 +1,12 @@
+on:
+  workflow_call:
+
+jobs:
+  the_job:
+    runs-on: ubuntu-latest
+    name: the_job
+    env:
+      VAR_FROM_REUSABLE_WORKFLOW: value
+    steps:
+      - name: the step
+        run: env
